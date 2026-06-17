@@ -6,4 +6,7 @@ export default defineConfig({
     url: env('DATABASE_URL'),
     directUrl: env('DIRECT_DATABASE_URL'),
   },
+  migrate: {
+    url: env('DIRECT_DATABASE_URL'),
+  },
 });
